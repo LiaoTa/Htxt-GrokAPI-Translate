@@ -1,0 +1,24 @@
+請將下方的日文和英文內容逐行並參考上下文，姓氏、人名、地名按照翻譯對照表"translation_dictionary"的內容翻譯並潤色成繁體白話中文。分析並掃描原文，如果有發現新的姓氏、人名 (姓氏跟人名要分開) 、地名、專有名詞、術語,按相同的 JSON 格式新增至"translation_dictionary"。擬聲詞、擬態詞、感嘆詞要按照擬聲對照表"sound_dictionary"的內容翻譯並潤色成繁體白話中文。分析並掃描原文，如果有發現新的擬聲詞、擬態詞、感嘆詞，按相同的 JSON 格式新增至"sound_dictionary"。**只翻譯 HTML 標籤之間的文字節點**，**保留所有 HTML 標籤與屬性原樣** (例如 <p data-line="4">,</p> 等)，不要新增或刪除任何標籤或屬性。屬性值 (如 data-line、class、id) 請不要翻譯或修改。保留原有的換行、與標點位置。**URL (http://, https://, www.) 和 Email 地址保持原樣不翻譯**。輸出應為完整的 HTML 結構。請回傳"translation_dictionary"(JSON 格式) 跟"sound_dictionary"(JSON 格式) 還有下面的繁體白話中文翻譯 (保留所有 HTML 標籤與屬性原樣)，除此之外不要增加任何東西:
+
+translation_dictionary:
+[{"jp":"鎌田","zh":"鎌田"},{"jp":"みつ","zh":"蜜"},{"jp":"オマ○コ","zh":"陰部"},{"jp":"マ○コ","zh":"陰部"},{"jp":"ペニス","zh":"陰茎"}]
+
+sound_dictionary:
+[{"sound_jp":"あ","sound_zh":"啊"},{"sound_jp":"ああ","sound_zh":"啊啊"},{"sound_jp":"あああ","sound_zh":"啊啊啊"},{"sound_jp":"あああっ","sound_zh":"啊啊啊"},{"sound_jp":"ああっ","sound_zh":"啊啊"},{"sound_jp":"ああッ","sound_zh":"啊啊！"},{"sound_jp":"あっ","sound_zh":"嗯"},{"sound_jp":"あら","sound_zh":"哎呀"},{"sound_jp":"あん","sound_zh":"啊嗯"},{"sound_jp":"あんッ","sound_zh":"啊嗯！"},{"sound_jp":"あッ","sound_zh":"啊！"},{"sound_jp":"い","sound_zh":"咿"},{"sound_jp":"いっ","sound_zh":"咿"},{"sound_jp":"イ","sound_zh":"咿"},{"sound_jp":"イヤ","sound_zh":"哎呀"},{"sound_jp":"イヤぁ","sound_zh":"哎呀啊"},{"sound_jp":"う","sound_zh":"嗚"},{"sound_jp":"うぅ","sound_zh":"嗚"},{"sound_jp":"うぅぅ","sound_zh":"嗚嗚"},{"sound_jp":"うう","sound_zh":"呜呜"},{"sound_jp":"ううッ","sound_zh":"呜呜！"},{"sound_jp":"うッ","sound_zh":"嗚！"},{"sound_jp":"かっ","sound_zh":"怒喝"},{"sound_jp":"き","sound_zh":"咔"},{"sound_jp":"キッと","sound_zh":"瞪視"},{"sound_jp":"く","sound_zh":"咕"},{"sound_jp":"クリクリ","sound_zh":"扭扭"},{"sound_jp":"け","sound_zh":"咔"},{"sound_jp":"こ","sound_zh":"喂"},{"sound_jp":"がっ","sound_zh":"嘎"},{"sound_jp":"ぎ","sound_zh":"嘶"},{"sound_jp":"ぐ","sound_zh":"咕"},{"sound_jp":"さ","sound_zh":"撒"},{"sound_jp":"ささ","sound_zh":"來吧"},{"sound_jp":"し","sound_zh":"嘶"},{"sound_jp":"しょっ","sound_zh":"唷啊"},{"sound_jp":"す","sound_zh":"吸"},{"sound_jp":"すっ","sound_zh":"啊"},{"sound_jp":"すっかり","sound_zh":"完全"},{"sound_jp":"たん","sound_zh":"啪"},{"sound_jp":"ち","sound_zh":"呃"},{"sound_jp":"ちろ","sound_zh":"啜"},{"sound_jp":"つ","sound_zh":"呲"},{"sound_jp":"ネットリ","sound_zh":"黏膩地"},{"sound_jp":"は","sound_zh":"哈"},{"sound_jp":"はあ","sound_zh":"哈啊"},{"sound_jp":"はああ","sound_zh":"哈啊啊"},{"sound_jp":"はああッ","sound_zh":"哈啊啊！"},{"sound_jp":"はあっ","sound_zh":"哈啊"},{"sound_jp":"ひ","sound_zh":"嘻"},{"sound_jp":"ひう","sound_zh":"咿呜"},{"sound_jp":"ひうう","sound_zh":"咿嗚"},{"sound_jp":"ひううッ","sound_zh":"咿嗚！"},{"sound_jp":"ふ","sound_zh":"呼"},{"sound_jp":"ふあ","sound_zh":"呼啊"},{"sound_jp":"ふああ","sound_zh":"呼啊"},{"sound_jp":"ふはあ","sound_zh":"呼哈啊"},{"sound_jp":"へ","sound_zh":"嘿"},{"sound_jp":"ぼっ","sound_zh":"啵"},{"sound_jp":"ぱ","sound_zh":"啪"},{"sound_jp":"ム","sound_zh":"姆"},{"sound_jp":"モゾモゾ","sound_zh":"扭扭動動"},{"sound_jp":"や","sound_zh":"呀"},{"sound_jp":"やぁ","sound_zh":"呀啊"},{"sound_jp":"やぁっ","sound_zh":"呀啊！"},{"sound_jp":"やめて","sound_zh":"不要"},{"sound_jp":"よ","sound_zh":"喲"},{"sound_jp":"わ","sound_zh":"哇"},{"sound_jp":"ん","sound_zh":"嗯"},{"sound_jp":"んあ","sound_zh":"嗯啊"},{"sound_jp":"んああ","sound_zh":"嗯啊啊"},{"sound_jp":"んああッ","sound_zh":"嗯啊啊！"},{"sound_jp":"んっ","sound_zh":"嗯"},{"sound_jp":"んふ","sound_zh":"嗯呼"},{"sound_jp":"んん","sound_zh":"嗯嗯"},{"sound_jp":"んんっ","sound_zh":"嗯嗯"},{"sound_jp":"ぁ","sound_zh":"啊"},{"sound_jp":"ぅ","sound_zh":"唔"},{"sound_jp":"ぅぅ","sound_zh":"唔唔"},{"sound_jp":"っ","sound_zh":"啊"}]
+
+原文內容:
+<p data-line="41">そこで鎌田は、今度は乳頭を舌でネットリと舐めまわしながら、右の乳首をクリクリと弄りだした。</p>
+<p data-line="42">「ひううッ！　んっ、あっ、やぁっ！　声がっ、あああっ、出ちゃうぅぅッ！　ああっ、はああッ……！」</p>
+<p data-line="43">突起を舌と指で同時に刺激されて、みつが大きな声で喘ぐ。さすがに、この刺激を受けては声を我慢することもできなかったらしい。</p>
+<p data-line="44">「はあっ！　ああっ、はあっ、あんッ……！　んんっ……んああッ……！」</p>
+<p data-line="45">鎌田がさらにバストを弄りまわしていると、みつが喘ぎながら脚をモゾモゾと動かしはじめた。</p>
+<p data-line="46">彼女のショーツは、ホームでの絶頂ですっかり湿っているし、この反応を見れば秘部が今も相当にうずいているのは疑いようもない。</p>
+<p data-line="47">そこで鎌田は、いったんふくらみへの愛撫をやめて顔をあげた。</p>
+<p data-line="48">すると、女子大生が「ふはあ……」と安堵の吐息をこぼす。</p>
+<p data-line="49">そうして身体からやや力が抜けた隙を見て、鎌田は彼女の下半身に移動して下着に手をかけた。</p>
+<p data-line="50">「はあ、はあ……ああ、イヤぁ」</p>
+<p data-line="51">弱々しい声をあげたみつが、なんとか脚を閉じようとする。</p>
+<p data-line="52">しかし鎌田は、そんなささやかな抵抗を無視して白いショーツを一気に引きさげ、淡い恥毛に覆われた濡れそぼった秘裂をあらわにした。</p>
+<p data-line="53">「キスもしたことがなかったんだったら、みつはもちろん処女だよね？」</p>
+<p data-line="54">「ふああ……そんなの、あなたには関係ないでしょっ」</p>
+<p data-line="55">鎌田の問いに、美人女子大生が涙を浮かべた目でキッとにらみつけながら、弱々しくもきっぱり言う。</p>

@@ -1,0 +1,29 @@
+請將下方的日文和英文內容逐行並參考上下文，姓氏、人名、地名按照翻譯對照表"translation_dictionary"的內容翻譯並潤色成繁體白話中文。分析並掃描原文，如果有發現新的姓氏、人名 (姓氏跟人名要分開) 、地名、專有名詞、術語,按相同的 JSON 格式新增至"translation_dictionary"。擬聲詞、擬態詞、感嘆詞要按照擬聲對照表"sound_dictionary"的內容翻譯並潤色成繁體白話中文。分析並掃描原文，如果有發現新的擬聲詞、擬態詞、感嘆詞，按相同的 JSON 格式新增至"sound_dictionary"。**只翻譯 HTML 標籤之間的文字節點**，**保留所有 HTML 標籤與屬性原樣** (例如 <p data-line="4">,</p> 等)，不要新增或刪除任何標籤或屬性。屬性值 (如 data-line、class、id) 請不要翻譯或修改。保留原有的換行、與標點位置。**URL (http://, https://, www.) 和 Email 地址保持原樣不翻譯**。輸出應為完整的 HTML 結構。請回傳"translation_dictionary"(JSON 格式) 跟"sound_dictionary"(JSON 格式) 還有下面的繁體白話中文翻譯 (保留所有 HTML 標籤與屬性原樣)，除此之外不要增加任何東西:
+
+translation_dictionary:
+[{"jp":"鎌田","zh":"鎌田"},{"jp":"みつ","zh":"蜜"},{"jp":"麻菜","zh":"麻菜"},{"jp":"カナ","zh":"香奈"},{"jp":"ラブホテル","zh":"情人旅館"}]
+
+sound_dictionary:
+[{"sound_jp":"あ","sound_zh":"啊"},{"sound_jp":"ああ","sound_zh":"啊啊"},{"sound_jp":"あああ","sound_zh":"啊啊啊"},{"sound_jp":"あああッ","sound_zh":"啊啊啊！"},{"sound_jp":"ああっ","sound_zh":"啊啊"},{"sound_jp":"ああッ","sound_zh":"啊啊！"},{"sound_jp":"あおっ","sound_zh":"啊哦"},{"sound_jp":"あっ","sound_zh":"嗯"},{"sound_jp":"あん","sound_zh":"啊嗯"},{"sound_jp":"あんっ","sound_zh":"啊嗯"},{"sound_jp":"あッ","sound_zh":"啊！"},{"sound_jp":"い","sound_zh":"咿"},{"sound_jp":"いあ","sound_zh":"咿啊"},{"sound_jp":"イ","sound_zh":"咿"},{"sound_jp":"イヤ","sound_zh":"哎呀"},{"sound_jp":"イヤぁ","sound_zh":"哎呀啊"},{"sound_jp":"う","sound_zh":"嗚"},{"sound_jp":"うあ","sound_zh":"呜啊"},{"sound_jp":"うが","sound_zh":"嗚嘎"},{"sound_jp":"うっ","sound_zh":"呃"},{"sound_jp":"え","sound_zh":"哎"},{"sound_jp":"お","sound_zh":"哦"},{"sound_jp":"おっ","sound_zh":"哦"},{"sound_jp":"かっ","sound_zh":"怒喝"},{"sound_jp":"き","sound_zh":"咔"},{"sound_jp":"く","sound_zh":"咕"},{"sound_jp":"くう","sound_zh":"咕呜"},{"sound_jp":"くうっ","sound_zh":"呃"},{"sound_jp":"け","sound_zh":"咔"},{"sound_jp":"こ","sound_zh":"喂"},{"sound_jp":"こら","sound_zh":"喂"},{"sound_jp":"がっ","sound_zh":"嘎"},{"sound_jp":"ぎ","sound_zh":"嘶"},{"sound_jp":"さ","sound_zh":"撒"},{"sound_jp":"し","sound_zh":"嘶"},{"sound_jp":"す","sound_zh":"吸"},{"sound_jp":"それっ","sound_zh":"那！"},{"sound_jp":"たま","sound_zh":"嗚"},{"sound_jp":"ち","sound_zh":"呃"},{"sound_jp":"チュ","sound_zh":"啾"},{"sound_jp":"チュバ","sound_zh":"啾吧"},{"sound_jp":"チュバチュバ","sound_zh":"啾吧啾吧"},{"sound_jp":"つ","sound_zh":"呲"},{"sound_jp":"ど","sound_zh":"咚"},{"sound_jp":"は","sound_zh":"哈"},{"sound_jp":"はあ","sound_zh":"哈啊"},{"sound_jp":"はあっ","sound_zh":"哈啊"},{"sound_jp":"はう","sound_zh":"哈呜"},{"sound_jp":"はうっ","sound_zh":"哈呜"},{"sound_jp":"ひ","sound_zh":"嘻"},{"sound_jp":"ふ","sound_zh":"呼"},{"sound_jp":"ふあ","sound_zh":"呼啊"},{"sound_jp":"ふああ","sound_zh":"呼啊"},{"sound_jp":"ふあっ","sound_zh":"呼啊啊"},{"sound_jp":"ほ","sound_zh":"呼"},{"sound_jp":"ほう","sound_zh":"哦"},{"sound_jp":"バチ","sound_zh":"啪"},{"sound_jp":"ビク","sound_zh":"抽"},{"sound_jp":"ビクビク","sound_zh":"抽抽"},{"sound_jp":"む","sound_zh":"唔"},{"sound_jp":"もっと","sound_zh":"更多"},{"sound_jp":"や","sound_zh":"呀"},{"sound_jp":"ゆ","sound_zh":"吁"},{"sound_jp":"よ","sound_zh":"喲"},{"sound_jp":"わ","sound_zh":"哇"},{"sound_jp":"ん","sound_zh":"嗯"},{"sound_jp":"んあ","sound_zh":"嗯啊"},{"sound_jp":"んあっ","sound_zh":"嗯啊"},{"sound_jp":"んく","sound_zh":"嗯咕"},{"sound_jp":"んくうっ","sound_zh":"嗯咕呃"},{"sound_jp":"んっ","sound_zh":"嗯"},{"sound_jp":"んん","sound_zh":"嗯嗯"},{"sound_jp":"んんっ","sound_zh":"嗯嗯"},{"sound_jp":"んんッ","sound_zh":"嗯嗯！"},{"sound_jp":"ぁ","sound_zh":"啊"},{"sound_jp":"っ","sound_zh":"啊"}]
+
+原文內容:
+<p data-line="21">唇を解放されたみつが、涙を流しながらそう口にしかけて、言葉を呑みこむ。</p>
+<p data-line="22">果たして、「こんなキモオタに」と言いたかったのか、「こんな形で奪われるなんて」と言いたかったのか、それは鎌田にはわからなかった。しかし、どちらにせよ彼女が相当の屈辱を感じているのは間違いない。</p>
+<p data-line="23">ただ、そんなみつの態度が加虐心をあおってやまなかった。</p>
+<p data-line="24">鎌田は二つのふくらみをわしづかみにした。そして、指に力をこめて乳房を揉みしだきだす。</p>
+<p data-line="25">「はあっ、ああっ、そこっ、あんっ、敏感でっ、ふああッ……！」</p>
+<p data-line="26">手の動きに合わせて、みつが甲高い喘ぎ声をこぼす。</p>
+<p data-line="27">もともと、身体は敏感にしたままな上に、すでに二度達しているせいか、彼女は快感をまったく抑えられないようだ。</p>
+<p data-line="28">（揉みごたえは、さすがに麻菜のほうがあるけど、これはこれでなかなか……）</p>
+<p data-line="29">鎌田は、手のひらに広がった感触に、そんなことを思っていた。</p>
+<p data-line="30">麻菜の乳房は、その大きさゆえに柔らかさが勝っていたが、この女子大生のふくらみは柔らかさと弾力のバランスが絶妙だった。もっとも、魅力が異なる以上、比較するのはナンセンスなのかもしれないが。</p>
+<p data-line="31">鎌田は、さらにみつのバストを揉みしだき、その絶品の手触りを堪能した。</p>
+<p data-line="32">「はうっ、んんっ、んくうっ……ふあっ、あんんッ……」</p>
+<p data-line="33">みつは唇を噛んで、なんとか喘ぎ声をこらえようとしているようだった。しかし、胸から送りこまれてくる性電気のせいで、甘い声がしばしばこぼれ出す。</p>
+<p data-line="34">ひとしきり胸の感触を愉しむと、鎌田は左乳房の先に突き出した突起に顔を近づけた。そして、みつがなにか言う前に、そこに吸いつく。</p>
+<p data-line="35">「うあッ！　ああっ、イヤぁぁ！」</p>
+<p data-line="36">乳首に吸いつかれた女子大生が、甲高い悲鳴のような声をあげる。</p>
+<p data-line="37">しかし鎌田は、構わずにチュバチュバと音を立てて突起を吸いあげた。</p>
+<p data-line="38">「んあっ！　ああっ、それっ、はあっ、イヤって言って……あああッ！」</p>
+<p data-line="39">乳首を吸っただけで、みつがビクビクと身体を震わせ、抗議の声を途切れさせる。</p>
+<p data-line="40">かなり感じているのは、この姿を見ていれば明らかだ。</p>
