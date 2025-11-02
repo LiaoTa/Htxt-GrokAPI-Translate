@@ -191,7 +191,7 @@ class TranslationBatchProcessor:
                     selected_entries.append(random.choice(valid_entries))
         dict_json = json.dumps(selected_entries, ensure_ascii=False, separators=(',', ':'))
         content = "".join(lines)
-         prompt = f"""請將下方的英文內容逐行並參考上下文,姓氏、人名、地名按照翻譯對照表"translation_dictionary"的內容翻譯並潤色成繁體白話中文。分析並掃描原文,如果有發現新的姓氏、人名 (姓氏跟人名要分開) 或地名,按相同的 JSON 格式新增至"translation_dictionary"。**只翻譯 HTML 標籤之間的文字節點**,**保留所有 HTML 標籤與屬性原樣** (例如 <p data-line="4">,</p> 等),不要新增或刪除任何標籤或屬性。屬性值 (如 data-line、class、id) 請不要翻譯或修改。保留原有的換行、與標點位置。**URL (http://, https://, www.) 和 Email 地址保持原樣不翻譯**。輸出應為完整的 HTML 結構。請***只回傳新增的***""translation_dictionary"(JSON 格式) 還有下面的繁體白話中文翻譯 (保留所有 HTML 標籤與屬性原樣),除此之外不要增加任何東西:
+        prompt = f"""請將下方的英文內容逐行並參考上下文,姓氏、人名、地名按照翻譯對照表"translation_dictionary"的內容翻譯並潤色成繁體白話中文。分析並掃描原文,如果有發現新的姓氏、人名 (姓氏跟人名要分開) 或地名,按相同的 JSON 格式新增至"translation_dictionary"。**只翻譯 HTML 標籤之間的文字節點**,**保留所有 HTML 標籤與屬性原樣** (例如 <p data-line="4">,</p> 等),不要新增或刪除任何標籤或屬性。屬性值 (如 data-line、class、id) 請不要翻譯或修改。保留原有的換行、與標點位置。**URL (http://, https://, www.) 和 Email 地址保持原樣不翻譯**。輸出應為完整的 HTML 結構。請***只回傳新增的***""translation_dictionary"(JSON 格式) 還有下面的繁體白話中文翻譯 (保留所有 HTML 標籤與屬性原樣),除此之外不要增加任何東西:
 
 translation_dictionary:
 {dict_json}
@@ -725,4 +725,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
